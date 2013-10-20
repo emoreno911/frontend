@@ -7,6 +7,8 @@ asi como enlaces e informacion de interes para la dinamica del curso.</p>
  <li><a href="http://www.sublimetext.com/">Sublime Text</a></li>
 </ul>
 
+<p>Pueden descargar los archivos del repositorio presionando el boton Download ZIP, en la derecha de la pantalla</p>
+
 <p>El siguiente formulario es para elaborar la lista de correos de la clase: 
 <a href="https://docs.google.com/forms/d/1c8oZs_vP2ZDPmKXcLpU09EljjUscSJNE98bC7MYYI7Q/viewform">Ir al Formulario</a></p>
 
