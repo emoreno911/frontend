@@ -46,4 +46,5 @@ que contiene informacion de lo visto en clase.</p>
 <p><strong>P.D.1:</strong> Para comenzar con la asignacion deben crear una carpeta en el escritorio 
 (o cualquier otro directorio) con el nombre de su preferencia, en ella colocaran todos los archivos que necesiten para
 realizar la asignacion.</p>
-<p><strong>P.D.2:</strong> Para posicionar a la derecha la el aside de la asignacion se usa la propiedad de CSS float</p>
+<p><strong>P.D.2:</strong> Para posicionar a la derecha el <strong>aside</strong> de la asignacion se usa la 
+propiedad de CSS float</p>
