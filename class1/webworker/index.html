@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Web Worker example</title>
+</head>
+<body>
+	<h2>Webworkers</h2>
+	<p>Tasks:</p>
+	<input type="text" id="var1">
+	<button onclick="alert('You press the alert button')">Show alert</button>
+
+	<button onclick="work()">With Worker</button>
+	<button onclick="workhard()">Without Worker</button>
+	<p>The result: <small id="result" /></small>
+
+	<script>
+		function work(){
+			var worker = new Worker('worker.js');
+			worker.onmessage = function (event) {
+				var el = document.getElementById('result');
+				el.style.color = '#d6d';
+				el.innerText = event.data;
+			};
+		}
+
+		function workhard(){
+			var result = getPrimeNumbers(500000);
+			var el = document.getElementById('result');
+			el.style.color = '#dd6';
+			el.innerText = result;
+		}
+
+		function getPrimeNumbers (k) {
+			var primeNumbers = [2,3,5,7],
+		    num = 8;
+
+			do{
+				if(num%2 != 0)
+				 if(num%3 != 0)
+				  if(num%5 != 0)
+					if(num%7 != 0){
+						var temp = parseInt(Math.sqrt(num)),
+							prime = true;
+						for (var i = 2; i <= temp; i++) {
+							if(num%i == 0){
+								prime = false;
+								break;
+							}	
+						}
+						if(prime)
+							primeNumbers.push(num);
+					}
+						 
+				num++;
+
+			}while(primeNumbers.length < k);
+
+			var out = primeNumbers.join(' ');
+
+			return out;
+		}
+
+
+	</script>
+</body>
+</html>

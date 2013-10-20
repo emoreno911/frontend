@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Class 1 - HTML5</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<style type="text/css">
+		body {width: 960px; margin: 10px auto;}
+		header, nav, section, aside, footer {margin: 5px 0; padding: 5px;}
+		header {background-color: #dd9}
+		nav {background-color: #d9d}
+		section {background-color: #9d9}
+		aside {background-color: #d99}
+		footer {background-color: #9dd}
+		ul {list-style: none; }
+		ul li {display: inline-block; margin-right: 10px;}
+	</style>
+
+</head>
+<body>
+
+	<header>
+		<hgroup>
+			<h1>Titulo</h1>
+			<h2>Tag Line</h2>
+		</hgroup>
+	</header>
+	<nav>
+		<ul>
+			<li>Home</li>
+			<li>About</li>
+			<li>Contact</li>
+		</ul>
+	</nav>
+	<section>
+		<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</article>
+		<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</article>
+	</section>
+	<section>
+		<h4>New imput fields</h4>
+		<label>Email</label>
+		<input type="email" value="some@email.com" />
+		<label>Date</label>
+		<input type="date" min="2010-08-14" max="2011-08-14" value="2010-08-14"/>
+		<label>Range</label>
+		<input type="range" min="0" max="50" value="10" />
+		<label>Search</label>
+		<input type="search" results="10" placeholder="Search..." />
+		<label>Tel</label>
+		<input type="tel"  placeholder="(555) 555-5555" pattern="^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}.*?$" id="te"/>
+		<label>Color</label>
+		<input type="color" placeholder="e.g. #bbbbbb" id="col"/>
+
+		<input type="number" step="1" min="1"  max="50" value="20">
+
+	</section>
+	<aside>
+		<video width="500" height="350" controls>
+		  <source src="video.mp4" type="video/mp4">
+		</video>
+		<audio controls>
+		  <source src="song.mp3" type="audio/mpeg">
+		</audio>
+	</aside>
+	<footer>
+		Made by XYZ 2013
+	</footer>
+
+</body>
+</html>

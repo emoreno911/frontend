@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Class 1 - HTML</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<style type="text/css">
+		#wrap {width: 960px; margin: 10px auto}
+
+		img {height: 200px;}
+
+		h1,h2,h3, 
+		a, p
+		{/*display: none*/}
+
+		ol, dl, img, pre, table {display: none;}
+
+	</style>
+
+</head>
+<body>
+	<div id="wrap">
+		<h1 id="titulo">Encabezado 1</h1>
+		<h2>Encabezado 2</h2>
+		<h3>Encabezado 3</h3>
+
+		<a href="handleForm.php" target="_self">Link To...</a>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+
+ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+		<pre>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+		</pre>
+
+		<ol>
+		  <li>Inicio</li>
+		  <li>Noticias</li>
+		  <li>Articulos</li>
+		  <li>Contacto</li>
+		</ol>
+
+		<dl>
+			<dt>titulo 1</dt>
+			<dd>Desc1</dd>
+			<dt>titulo 2</dt>
+			<dd>Desc2</dd>
+		</dl>
+
+		<img src="html5t.jpg" alt="Imagen HTML5">
+
+		<table border="1">
+			<!--Encabezado de columnas-->
+			<tr>
+			  <th>Curso</th>
+			  <th>Horas</th>
+			  <th>Horario</th>
+			</tr>
+			<!--Contenido de la Tabla--> 
+			<tr>
+			  <td>CSS</td>
+			  <td>20</td>
+			  <td>16:00 - 20:00</td>
+			</tr>
+			<tr>
+			  <td>HTML</td>
+			  <td>20</td>
+			  <td>16:00 - 20:00</td>
+			</tr>
+		</table>
+
+		<br/>
+
+		<form action="handleForm.php" method="post">
+		  <fieldset>
+		    <legend>Datos personales</legend>
+		    <label>Nombre </label>
+		    <input type="text" name="nombre" value="" />
+		    <br/>
+		    <label>Apellidos </label>
+		    <input type="text" name="apellidos" value="" />
+		    <br/>
+		    <label>Contraseña </label>
+		    <input type="password" name="password" value="" maxlength="10" id="pass"/>
+		    <br/>
+		    <input type="submit" value="Enviar Formulario">
+		  </fieldset>
+		</form>
+
+
+
+	</div>
+
+</body>
+</html>

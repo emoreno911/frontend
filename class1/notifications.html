@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Notification Demo</title>
+		<!--http://dev.chromium.org/developers/design-documents/desktop-notifications/api-specification.-->
+	</head>
+	<body>
+
+	<h2>Awesome Notifications</h2>
+	<input type="text" name="noti" id="noti"/>
+	<button id="submit">Show Notification</button>
+
+
+	<!--<script src="jquery.min.js"></script>-->
+	<script type="text/javascript">
+		
+		(function(){
+
+			document.getElementById('submit').onclick = function(e){
+				var permision = window.webkitNotifications.checkPermission();
+
+
+				if(permision != 0)
+				{
+					window.webkitNotifications.requestPermission();
+				}
+				else
+				{
+					var noti = document.getElementById("noti").value;
+					var msg = window.webkitNotifications.createNotification(
+					'icon.png', 'Test Notification', 'You say: ' + noti
+					);	
+					msg.show();
+				}
+			}
+
+		})();
+	</script>
+
+	</body>
+</html>
