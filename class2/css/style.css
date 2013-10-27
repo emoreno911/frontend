@@ -1,0 +1,4 @@
+.menu {background: #55d;}
+ul {list-style: none; padding: 0;}
+ul li {display: inline-block; color: #fff; padding: 8px }
+ul li:hover {background: rgba(0,0,0,0.4); cursor: pointer;}

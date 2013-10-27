@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Class 2 - Selectores</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<style type="text/css">
+		body {width: 600px}
+		h1, h2 {color: red;}
+		div p span {color: red;}
+		h2, #xyz {color: magenta;}
+		.error {color: blue}
+		ul {list-style: none;}
+		ul li {background-color: #ddd}
+		ul li:nth-child(even) {background-color: #444; color: #fff}
+	</style>
+
+</head>
+<body>
+
+	<h1 id="mytitle">Blog Title</h1>
+
+	<div class="art1">
+		<h2>Lorem ipsum</h2>
+
+		<p class="aviso">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <span>ullamco</span> laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+	
+	<h2>Lorem ipsum</h2>
+
+	<p class="error">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <span>tempor</span> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+	<h2 id="xyz">Lorem <span>tempor</span></h2>
+
+	<ul>
+		<li>Home</li>
+		<li>About</li>
+		<li>Products</li>
+		<li>Support</li>
+		<li>Contact</li>
+	</ul>
+
+
+</body>
+</html>

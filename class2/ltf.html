@@ -1,0 +1,125 @@
+<html>
+<head>
+	<title>Class 2 - LTF</title>
+	<style type="text/css">
+		/*ul, table {display: none;}
+		ul {list-style-type: circle;}
+		ul.im {list-style-image: url(img/quilt.png);}*/
+
+		nav {background: #47d; }
+		ul {list-style: none;}
+		ul li {margin-right: 10px; display: inline-block; padding: 8px}
+		ul li a {text-decoration: none; color:white;}
+		ul li:hover {color: white; background-color: rgba(0,0,0,0.6);}
+		.selected {background-color: rgba(0,0,0,0.8)}
+
+		table {border: solid black 1px; border-collapse: collapse;}
+		table tr {}
+		table th,
+		table td {border: solid black 1px; padding: 5px;}
+		table th {color: white; background-color: #444}
+		table tr.footer th {background-color: #999;}
+		table tr td.number {text-align: right;}
+
+		table tr:nth-child(even) td {background-color: #ddd}
+
+		form {display: table; width: 300px}
+		form div {display: table-row;}
+		form div > * {display: table-cell;}
+		form div > label {width: 100px}
+		form div > input {width: 100%}
+
+	</style>
+</head>
+<body>
+
+	<h2>List, Tables and Forms</h2>
+
+	<nav>
+		<ul>
+			<li class="selected"><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Products</a></li>
+			<li><a href="#">Support</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+
+	<h3>Table</h3>
+	<table class="data">
+	  <tr>
+	    <th>Entry Header 1</th>
+	    <th>Entry Header 2</th>
+	    <th>Entry Header 3</th>
+	    <th>Entry Header 4</th>
+	  </tr>
+	  <tr>
+	    <td>Entry First Line 1</td>
+	    <td>Entry First Line 2</td>
+	    <td>Entry First Line 3</td>
+	    <td class="number">4</td>
+	  </tr>
+	  <tr>
+	    <td>Entry Line 1</td>
+	    <td>Entry Line 2</td>
+	    <td>Entry Line 3</td>
+	    <td class="number">4</td>
+	  </tr>
+	  <tr>
+	    <td>Entry Last Line 1</td>
+	    <td>Entry Last Line 2</td>
+	    <td>Entry Last Line 3</td>
+	    <td class="number">4</td>
+	  </tr>
+	  <tr>
+	    <td>Entry First Line 1</td>
+	    <td>Entry First Line 2</td>
+	    <td>Entry First Line 3</td>
+	    <td class="number">4</td>
+	  </tr>
+	  <tr>
+	    <td>Entry Line 1</td>
+	    <td>Entry Line 2</td>
+	    <td>Entry Line 3</td>
+	    <td class="number">4</td>
+	  </tr>
+	  <tr>
+	    <td>Entry Last Line 1</td>
+	    <td>Entry Last Line 2</td>
+	    <td>Entry Last Line 3</td>
+	    <td class="number">4</td>
+	  </tr>
+	  <tr class="footer">
+	    <th>Entry Footer 1</th>
+	    <th>Entry Footer 2</th>
+	    <th>Entry Footer 3</th>
+	    <th>Entry Footer 4</th>
+	  </tr>
+	</table>
+
+	<h3>Form</h3>
+	<form action="#" method="post">
+	  <fieldset>
+	  	<div>
+	  		<label for="name">Name:</label>
+	    <input type="text" id="name" placeholder="Enter your full name" />
+	  	</div>
+	  	<div>
+	  		<label for="email">Email:</label>
+	    <input type="email" id="email" placeholder="Enter your email address" />
+	  	</div>
+	  	<div>
+	  		<label for="message">Message:</label>
+	    <textarea id="message" placeholder="What's on your mind?"></textarea>
+	  	</div>
+
+	    <div><span></span><input type="submit" value="Send message" /></div>
+	    
+
+	  </fieldset>
+	</form>
+
+
+
+</body>
+</html>
