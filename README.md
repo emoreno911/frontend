@@ -48,3 +48,28 @@ que contiene informacion de lo visto en clase.</p>
 realizar la asignacion.</p>
 <p><strong>P.D.2:</strong> Para posicionar a la derecha el <strong>aside</strong> de la asignacion se usa la 
 propiedad de CSS float</p>
+
+
+<h2>Clase 2 (class2)</h2>
+<p>La asignacion de esta clase consiste en restructurar el documento de la clase anterior utilizando las librerias Normalize y 
+960 grid system. La recomendacion es que sean creativos con el diseño, ordenen su proyecto en carpetas y utilizen las 
+tecnicas y herramientas que se vieron durante la clase.</p>
+
+<p>Para presentar las asignaciones deberan crear una cuenta en <a href="https://getforge.com/">Forge</a> y subir su 
+contenido a dicho "Hosting Estatico", el proceso es muy sencillo y no les tomara mas de 5 min. Luego que tengan la 
+asignacion lista deberan llenar el siguiente 
+<a href="https://docs.google.com/forms/d/1sje0HZc6AtO8GH5mFdBHCsXBX-arxHmmEKtTJ7jIJJ4/viewform">FORMULARIO</a> para yo 
+tener las URLs y revisar.</p>
+
+<h4>Enlaces de interes:</h4>
+<ul>
+ <li><a href="https://getforge.com/">Hosting Estatico Forge</a></li>
+ <li><a href="https://docs.google.com/forms/d/1sje0HZc6AtO8GH5mFdBHCsXBX-arxHmmEKtTJ7jIJJ4/viewform">Formulario</a></li>
+ <li><a href="http://librosweb.es/css/">Guia de CSS</a></li>
+ <li><a href="http://www.lesliefranke.com/files/reference/csscheatsheet.html">CSS Cheat Sheet</a> (Muy Util)</li>
+ <li><a href="http://960.gs/">960 Grid System</a></li>
+ <li><a href="http://dabblet.com/">Editor online Dabblet</a></li>
+ <li><a href="http://generator.lorem-ipsum.info/es">Generador de Lorem Ipsum</a></li>
+ <li><a href="http://lorempixel.com/">Generador de Imagenes Placeholder</a></li>
+ <li><a href="https://kuler.adobe.com/explore/newest/">Recomendaciones para combinacion de Colores</a></li>
+</ul>
