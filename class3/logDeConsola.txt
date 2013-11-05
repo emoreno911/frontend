@@ -1,0 +1,109 @@
+var s = "texto de prueba"
+>undefined
+var a = [1,2,3,4,5,6,7,8]
+>undefined
+s.length
+>15
+a.length
+>8
+a = [1,2,3,4,5,6,7,8,1,6]
+>[1, 2, 3, 4, 5, 6, 7, 8, 1, 6]
+a.length
+>10
+s.concat(' hola')
+>"texto de prueba hola"
+s + ' hola'
+>"texto de prueba hola"
+s.toUpperCase()
+>"TEXTO DE PRUEBA"
+var p = s.toUpperCase()
+>undefined
+p
+>"TEXTO DE PRUEBA"
+p.toLocaleLowerCase()
+>"texto de prueba"
+s.split('')
+>["t", "e", "x", "t", "o", " ", "d", "e", " ", "p", "r", "u", "e", "b", "a"]
+s.split(' ')
+>["texto", "de", "prueba"]
+s.split('e')
+>["t", "xto d", " pru", "ba"]
+var x = s.split('')
+>undefined
+x
+>["t", "e", "x", "t", "o", " ", "d", "e", " ", "p", "r", "u", "e", "b", "a"]
+x.join('')
+>"texto de prueba"
+x.join('-')
+>"t-e-x-t-o- -d-e- -p-r-u-e-b-a"
+a
+>[1, 2, 3, 4, 5, 6, 7, 8, 1, 6]
+a.join('')
+>"1234567816"
+a.join('-')
+>"1-2-3-4-5-6-7-8-1-6"
+var y = '<a>' + s + '</a>'
+>undefined
+y
+>"<a>texto de prueba</a>"
+var w = ['<a>',s,'</a>']
+>undefined
+w
+>["<a>", "texto de prueba", "</a>"]
+w.join('')
+>"<a>texto de prueba</a>"
+a
+>[1, 2, 3, 4, 5, 6, 7, 8, 1, 6]
+a.push(122)
+>11
+a
+>[1, 2, 3, 4, 5, 6, 7, 8, 1, 6, 122]
+a.push(52)
+>12
+a
+>[1, 2, 3, 4, 5, 6, 7, 8, 1, 6, 122, 52]
+a.pop()
+>52
+a
+>[1, 2, 3, 4, 5, 6, 7, 8, 1, 6, 122]
+a.reverse()
+>[122, 6, 1, 8, 7, 6, 5, 4, 3, 2, 1]
+var b = 'hola'
+>undefined
+var c = '123'
+>undefined
+var d = 123
+>undefined
+isNaN(b)
+>true
+isNaN(d)
+>false
+isNaN(c)
+>false
+var e = '12h4'
+>undefined
+e
+>"12h4"
+isNaN(e)
+>true
+5+6
+>11
+'5' + 6
+>"56"
+parseInt('5') + 6
+>11
+Math.PI
+>3.141592653589793
+var pi = Math.PI
+>undefined
+pi.toFixed()
+>"3"
+pi.toFixed(2)
+>"3.14"
+pi.toFixed(3)
+>"3.142"
+parseFloat(pi.toFixed(3))
+>3.142
+parseInt(pi.toFixed(3))
+>3
+

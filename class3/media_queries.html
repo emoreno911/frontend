@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Responsive Images</title>
+	<style type="text/css">
+
+		img {width: 220px}
+
+		@media (max-width: 890px){
+			img {width: 150px; transition: all 1s ease-in;}
+		}
+
+		@media (max-width: 690px){
+			img {width: 80px; transition: all 1s ease-in;}
+		}
+		
+	</style>
+</head>
+<body>
+
+	<div class="wrap">
+		<img src="img/one.jpg">
+		<img src="img/two.jpg">
+		<img src="img/three.jpg">
+		<img src="img/four.jpg">
+	</div>
+
+</body>
+</html>

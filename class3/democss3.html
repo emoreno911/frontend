@@ -1,0 +1,94 @@
+<html>
+<head>
+	<title>Pagina flotante</title>
+	<style>
+		.reflect { -webkit-box-reflect: right; opacity: 0.2 }
+		
+		button {
+			background: -webkit-linear-gradient(top, #2F2727, #1a82f7);
+			/*background: -webkit-radial-gradient(circle, #1a82f7, #2F2727); */
+			font-size: 28px;
+			color: #fff;
+			border: none;
+			border-radius: 10px;
+		}
+		button img {width: 48px; height: 48px;}
+		
+		.box {width: 100px; height: 100px; border: solid #000 1px}
+		.red {background: rgba(225,0,0,0.5)}
+		.blue {background: rgba(0,0,255,0.5); position: relative; top: -80px; left: 20px}
+		.green {background: rgba(0,255,0,0.5); position: relative; top: -160px; left: 40px}
+
+		.yel {background: rgb(225,0,0); opacity: 0.5}
+		
+		.menu li {
+			list-style: none;
+			padding: 5px 0 5px 10px;
+			width: 200px;
+			background: #6CF;
+			border-bottom: solid white 1px;
+		   
+			-webkit-transition: all 1s ease-in; 
+			-moz-transition: all .35s ease-in; 
+			-o-transition: all .35s ease-in;
+			 transition: all .35s ease-in;
+		}
+
+		.menu li:hover {
+			background: #06F;
+			width: 220px;
+			margin-left: 10px;
+		   
+			-webkit-transition: all .35s ease-out; 
+			-moz-transition: all .35s ease-out; 
+			-o-transition: all .35s ease-out;
+			transition: all .35s ease-out;
+		}
+
+		.menu li a {
+			text-decoration: none;
+			color: #FFF;   
+		}
+
+		.menu .selected {
+			  background: #06F;
+			width: 220px;
+			margin-left: 10px;
+		}
+		 
+		video {-webkit-box-reflect: right;}	
+
+	</style>
+</head>
+<body>
+	<div>
+
+		<!-- <button><img src="img/home.png"/> Home</button> -->
+		<h1>Texto de Ejemplo</h1>
+		<button>Home</button>
+		
+		<h3>Reflect</h3>
+		<!-- <img class="myimg" src="img/scar.jpg"/> -->
+
+		<video width="400" height="250" controls>
+		  <source src="video.mp4" type="video/mp4">
+		</video>
+		
+		
+		<h3>Transparencias</h3>
+			<div class="box red"><h1>A</h1></div>
+			<div class="box blue"></div>
+			<div class="box green"></div> 
+			<!-- <div class="box yel"><h1>A</h1></div> -->
+			
+		<h3>Transiciones</h3>
+		<ul class="menu">
+		  <li><a href="">Home</a></li>
+			<li class="selected"><a href="">Productos</a></li>
+			<li><a href="">Ofertas</a></li>
+			<li><a href="">Contactenos</a></li>
+		</ul>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Class 2 - Box Model</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+
+	<style type="text/css">
+		body {width: 960px; margin: 10px auto;}
+		body {
+			background-color: #444;
+			/*background-image: url(img/bg-net.jpg);
+			background-position: bottom right;*/
+			/*background: linear-gradient(0deg, #1a82f7, #2F2727);*/
+			background: -webkit-radial-gradient(circle, #1a82f7, #2F2727);
+			
+		}
+		header, nav, section, aside, footer {margin: 5px 0; padding: 5px;}
+		header {background-color: #7DCABB}
+		nav {background-color: #99AFDD}
+		/*section {background-color: #9d9}*/
+		aside {background-color: #F7AD7D}
+		footer {background-color: #9dd}
+		ul {list-style: none; }
+		ul li {display: inline-block; margin-right: 10px;}
+		img {height: 200px; float: left; margin-right: 10px;}
+		article {margin-top: 20px;}
+
+		#content section, 
+		#content aside {height: 600px;}
+		#content aside {float: right;}
+
+		.clear {clear: left;}
+	</style>
+
+	
+
+</head>
+<body>
+
+	<header>
+		<hgroup>
+			<h1>Sports Blog</h1>
+			<h2>Just Do it</h2>
+		</hgroup>
+	</header>
+	<nav>
+		<ul>
+			<li>Home</li>
+			<li>About</li>
+			<li>Contact</li>
+		</ul>
+	</nav>
+	<section id="content">
+		<aside>
+			<label>Search</label>
+			<input type="search" results="10" placeholder="Search..." />
+		</aside>
+
+		<section>
+			<article>
+				<img src="http://lorempixel.com/200/200/sports" alt="css3">
+				<h2>Surf</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+				<!-- <p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p> -->
+				
+			</article>
+			<div class="clear"></div>
+			<article>
+				<img src="http://lorempixel.com/200/200/city" alt="css3">
+				<h2>Motocross</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p></article>
+		</section>
+		
+	</section>
+	<footer>
+		Made by XYZ 2013
+	</footer>
+
+</body>
+</html>
