@@ -98,3 +98,21 @@ tener las URLs y revisar.</p>
 6. Por ultimo deben crear una funcion llamada jsIsCool() que reciba como parametro un vector de cualquier longitud, la cual debe copiar dicho vector, seguidamente invertirlo y finalmente sumarlo con el vector original al cuadrado.
 
 <p>Todo esto debe ir en un archivo javascript (ej: minombre.js)</p>
+
+<h2>Clase 4 (class4)</h2>
+<p>El material de la clase 4 ya se encuentra disponible en el repositorio.</p>
+
+<h4>Enlaces de interes:</h4>
+<ul>
+ <li>Funciones en Javascript 
+ <a href="http://www.w3schools.com/js/js_functions.asp">Link1</a> |  
+ <a href="http://www.quirksmode.org/js/function.html">Link2</a> | 
+ <a href="http://web-design-weekly.com/blog/2013/01/20/introduction-to-functions-in-javascript/">Link3</a>
+ </li>
+ <li>Manejo del DOM con Javascript 
+ <a href="http://javascript.atwebpages.com/tema5/pagina5_3.html">Link1</a> |  
+ <a href="http://efunctions.wordpress.com/2011/12/06/manejo-de-nodos-dom-con-javascript/">Link2</a>
+ </li>
+ <li><a href="http://www.w3schools.com/js/js_htmldom_events.asp">Eventos en Javascript</a></li>
+ <li><a href="http://eloquentjavascript.net/contents.html">Eloquent Javascript</a> (Libro)</li>
+</ul>
