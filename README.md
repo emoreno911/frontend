@@ -73,3 +73,28 @@ tener las URLs y revisar.</p>
  <li><a href="http://lorempixel.com/">Generador de Imagenes Placeholder</a></li>
  <li><a href="https://kuler.adobe.com/explore/newest/">Recomendaciones para combinacion de Colores</a></li>
 </ul>
+
+<h2>Clase 3 (class3)</h2>
+<p>El material de la clase 3 ya se encuentra actualizado en el repositorio.</p>
+<h4>Enlaces de interes:</h4>
+<ul>
+ <li><a href="http://css3.bradshawenterprises.com/transitions/">Guia Animaciones y Transiciones</a></li>
+ <li><a href="http://www.inserthtml.com/2012/06/css-filters/">Filtros en CSS</a></li>
+ <li><a href="http://www.cristalab.com/tutoriales/prefijos-automaticos-en-css3-con-prefix-free-c103046l/">Explicacion Prefix free</a></li>
+ <li><a href="http://getbootstrap.com/getting-started/">Bootstrap 3.0</li>
+ <li><a href="https://developer.mozilla.org/es/docs/CSS/Media_queries">Media Queries</a></li>
+ <li><a href="http://www.lukew.com/ff/entry.asp?1514">Responsive Design</a></li>
+ <li><a href="http://jsbooks.revolunet.com/">Recursos Javascript</a> (Revisar)</li>
+ <li><a href="http://www.nodebeginner.org/index-es.html">Node.js Beginner</a></li>
+</ul>
+
+<p>A continuacion les envio la asignacion de esta semana, esto son mas que todo ejercicios de logica:</p>
+
+1. Crear una funcion llamada arrayAleatorio() a la cual se le pase un parametro (n) y devuelva un array de longitud n con numeros enteros aleatorios (del 1 al 10).
+2. Crear una funcion llamada ordenarArray() que ordene de mayor a menor los elementos de un array, de mas esta decir que debe regresar el array ordenado.
+3. Crear una funcion llamada multiplicacion() que reciba dos parametros (num1 y num2). Esta funcion debe realizar la multiplicacion por el metodo de sumas sucesivas, para esto deben usar el ciclo mas adecuado.
+4. Crear una funcion llamada division() que reciba dos parametros (num1 y num2). Esta funcion debe realizar la division por el metodo de restas sucesivas, para esto deben usar el ciclo mas adecuado.
+5. Crear una funcion llamada potencia() que reciba dos parametros (num1 y num2). Esta funcion debe realizar la operacion mediante una sucesion de multiplicaciones.
+6. Por ultimo deben crear una funcion llamada jsIsCool() que reciba como parametro un vector de cualquier longitud, la cual debe copiar dicho vector, seguidamente invertirlo y finalmente sumarlo con el vector original al cuadrado.
+
+<p>Todo esto debe ir en un archivo javascript (ej: minombre.js)</p>
