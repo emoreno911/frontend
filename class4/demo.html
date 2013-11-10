@@ -1,0 +1,147 @@
+<html>
+<head>
+	<title>Demo</title>
+	<style type="text/css">
+
+	ul li {
+		list-style: none;
+		padding: 5px 0 5px 10px;
+		width: 200px;
+		background: #6CF;
+		border-bottom: solid white 1px;
+		color: white;
+	}
+
+	.delete {
+		-webkit-transform: translateX(300px);
+		opacity: 0;
+		-webkit-transition: all 2s ease-in-out;
+	}
+
+	.animate {
+		  opacity: 0;
+		  -webkit-animation: slideIn 1s linear forwards;
+		  animation: fadeIn 1s linear forwards
+		}
+
+		@-webkit-keyframes slideIn {
+		  0% {
+		    opacity: 0;
+		    -webkit-transform: translateX(300px);
+		    transform: translateX(300px)
+		  }
+
+		  70% {
+		    opacity: 1;
+		    -webkit-transform: translateX(-20px);
+		    -webkit-transform: rotateZ(270deg);
+		    transform: translateX(-20px)
+		  }
+
+		  100% {
+		    opacity: 1;
+		    -webkit-transform: translateX(0);
+		    -webkit-transform: rotateZ(360deg);
+		    transform: translateX(0)
+		  }
+		}
+
+
+	</style>
+</head>
+<body>
+	<h2>Esto es un Demo</h2>
+	<div>
+		<button id="add">Agregar item</button>
+		<button id="del">Eliminar item</button>
+	</div>
+	<ul>
+		<li>Arroz <a href="#">(Buscar)</a></li>
+		<li id="uniq">Azucar <a href="#">(Buscar)</a></li>
+		<li>Cafe <a href="#">(Buscar)</a></li>
+	</ul>
+
+	<!-- <button onclick="log();">Press Me</button> -->
+	<button id="boton">Press</button>
+
+	<script type="text/javascript">
+		var arr = [1,2,3,4];
+
+		function suma(x, y){
+			z = 3;
+
+			for(var i in arguments){
+		 		//console.log(arguments[i]);
+		 	}
+		 	
+		 	return x + y;
+		}
+
+		var result = suma(3,7,4);
+		//console.log(z);
+
+		
+		/*for (var i = 0, t = Things.length; i < t; i++) {
+			Things[i]
+		};*/
+
+		var lista = document.getElementsByTagName('ul')[0];
+		
+		for (var i = 0; i < 5; i++) {
+			var li = document.createElement('li'),
+			txt = document.createTextNode('Texto dinamico');
+			li.appendChild(txt);
+			lista.appendChild(li);
+		}
+
+
+		//Eventos Semanticos
+		var bo = document.getElementById('boton');
+		bo.onclick = function (e) {
+			console.log('Semantic handler');
+			this.style.background = '#982';
+		}; 
+		bo.onmouseover = function (e) {
+			console.log('Semantic handler Mouseover');
+			this.style.background = '#823';
+		};
+
+		document.onkeydown = function(e) {
+			//console.log('tecla presionada');
+			console.log(e)
+		};
+
+		//Crear-Eliminar en el DOM
+		var add = document.getElementById('add');
+		add.onclick = function(e) {
+			var li = document.createElement('li'),
+			txt = document.createTextNode('Texto dinamico');
+			li.appendChild(txt);
+			li.className = 'animate';
+			lista.appendChild(li);
+			setTimeout(function() {
+				li.removeAttribute('class', 'animate');
+			}, 1000);			
+		}
+
+		var del = document.getElementById('del');
+		//Elimina el ultimo elemento de la  lista
+		del.onclick = function(e) {
+			var lista_li = document.getElementsByTagName('li'),
+				len = lista_li.length,
+				last = lista_li[len-1]; //Ultimo elemento
+
+			
+			last.className = 'delete';
+			setTimeout(function() {
+				last.parentNode.removeChild(last);
+			}, 2000);
+			
+		}
+		
+
+
+	</script>
+
+</body>
+</html>

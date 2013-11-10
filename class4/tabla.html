@@ -1,0 +1,57 @@
+ <html>
+<head>
+	<title>Tabla Javascript</title>
+	<style type="text/css">
+		table {border: solid black 1px; border-collapse: collapse;}
+		table tr {}
+		table th,
+		table td {border: solid black 1px; padding: 5px;}
+		table th {color: white; background-color: #444}
+		table tr.footer th {background-color: #999;}
+		table tr td.number {text-align: right;}
+
+		table tr:nth-child(even) td {background-color: #ddd}
+		table tr td a {color: #37d; text-decoration: none;}
+	</style>
+</head>
+<body>
+
+	<div id="mytable"></div>
+
+	<script type="text/javascript">
+		var data = [{"title": "Madonna - Hollywood - Official Video", "url": "http://www.youtube.com/watch?v=XIXcRe67HGQ&feature=youtube_gdata_player", "site": "youtube.com", "date_found": "2013-11-07T00:00:00", "image_url": "http://i.ytimg.com/vi/XIXcRe67HGQ/default.jpg", "id": "4b8a7c4af428d37a315578bf2aa675f9"}, {"title": "Madonna - Sorry (Paul Oakenfold Remix)", "url": "http://www.youtube.com/watch?v=pCyYtP5DvGQ&feature=youtube_gdata_player", "site": "youtube.com", "date_found": "2013-11-07T00:00:00", "image_url": "http://i.ytimg.com/vi/pCyYtP5DvGQ/default.jpg", "id": "a81cf526e911ed2434fb67fba092c433"}, {"title": "Madonna ~ Bad Girl  (Full Audio & Lyrics)", "url": "http://www.youtube.com/watch?v=Gs_QU52Uto4&feature=youtube_gdata_player", "site": "youtube.com", "date_found": "2013-11-07T00:00:00", "image_url": "http://i.ytimg.com/vi/Gs_QU52Uto4/default.jpg", "id": "c4446f7355ace998fd6ce9fcfb5d3417"}, {"title": "Madonna - I Deserve It", "url": "http://www.youtube.com/watch?v=pn1Q_s0YIwI&feature=youtube_gdata_player", "site": "youtube.com", "date_found": "2013-11-07T00:00:00", "image_url": "http://i.ytimg.com/vi/pn1Q_s0YIwI/default.jpg", "id": "ea812d4e4217ad56e11b9f1bb9cfedbe"}, {"title": "Madonna - Keep It Together", "url": "http://www.youtube.com/watch?v=KliNmT-ETUg&feature=youtube_gdata_player", "site": "youtube.com", "date_found": "2013-11-07T00:00:00", "image_url": "http://i.ytimg.com/vi/KliNmT-ETUg/default.jpg", "id": "faf29a4956eb60e20cfc80d07a4e03d1"}, {"title": "Madonna - Live To Tell [Official Video]", "url": "http://www.youtube.com/watch?v=UAeOvr3oOVY&feature=youtube_gdata_player", "site": "youtube.com", "date_found": "2013-11-07T00:00:00", "image_url": "http://i.ytimg.com/vi/UAeOvr3oOVY/default.jpg", "id": "e4303e95dca439d3b56f4fe9114cd1dd"}]
+
+		var table =  document.createElement('table');
+
+		for(var i in data){
+			var item = data[i],
+				row = document.createElement('tr');
+
+			var c1 = document.createElement('td'),
+				c2 = document.createElement('td'),
+				c3 = document.createElement('td');
+
+			var title = document.createElement('a'),
+				site = document.createTextNode(item.site),
+				thumb = document.createElement('img');
+
+			title.href = item.url;
+			title.innerHTML = item.title;
+			thumb.src = item.image_url;
+
+			c3.appendChild(title);
+			c2.appendChild(site);
+			c1.appendChild(thumb);
+
+			row.appendChild(c1); row.appendChild(c2); row.appendChild(c3);
+
+			table.appendChild(row);
+		}
+
+		document.getElementById('mytable').appendChild(table);
+
+
+	</script>
+
+</body>
+</html>
