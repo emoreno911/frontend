@@ -116,3 +116,6 @@ tener las URLs y revisar.</p>
  <li><a href="http://www.w3schools.com/js/js_htmldom_events.asp">Eventos en Javascript</a></li>
  <li><a href="http://eloquentjavascript.net/contents.html">Eloquent Javascript</a> (Libro)</li>
 </ul>
+
+<h2>Clase 5 (class5)</h2>
+<p>El material de la clase 5 estara disponible el Lunes por la noche.</p>
