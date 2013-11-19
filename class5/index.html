@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title>Jquery Basics</title>
+	<style type="text/css">
+		#lista li {width: 150px; color: #ddd; padding: 3px;}
+	</style>
+	<script src="jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			boton = $('#btn');
+
+			jElem = $('<li>Elemento JQuery</li>');
+			jElem.appendTo('ul#lista');
+
+			boton.mouseover(function(e){
+				$(this).css('color', 'red');
+			});
+
+			lista = $('ul#lista');
+			boton.on('click',function(e){
+				//Anade un nuevo elemento a la lista
+				lista.append($('<li>Elemento JQuery</li>'));
+
+				//Comparacion de Scopes con This
+				/*console.log(this);
+				function hola (num) {
+					console.log(this);
+				}
+				hola('boton');*/
+			});
+
+			/*Evento Delegado*/
+			$('ul#lista').on('mouseover', 'li', function(e){
+				//console.log(this);
+				var color = Math.floor((Math.random()*899)+100);
+				$(this).css('background-color', '#'+color);
+			});
+			
+		})
+	</script>
+</head>
+<body>
+
+	<button id="btn">Add Element</button>
+	<ul id="lista">
+		<li>item1</li>
+		<li>item2</li>
+		<li>item3</li>
+		<li>item4</li>
+	</ul>
+
+	<ul id="menu">
+		<li>item1</li>
+		<li>item2</li>
+		<li>item3</li>
+		<li>
+			<ul id="submenu">
+				<li>item1</li>
+				<li>item2</li>
+				<li>item3</li>
+				<li>item4</li>
+			</ul>
+		</li>
+	</ul>
+
+</body>
+</html>

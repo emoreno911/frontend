@@ -1,0 +1,14 @@
+http://search.twitter.com/search.json?q=blue%20angels&rpp=5&include_entities=true&result_type=mixed
+http://search.twitter.com/search.json?q=Twitter%20API&result_type=mixed
+
+Problemas e Inconvenientes Ajax
+
+- Las páginas creadas dinámicamente mediante peticiones sucesivas AJAX, no son registradas de forma automática en el historial del navegador, así que haciendo clic en el botón de "volver" del navegador, el usuario no será devuelto a un estado anterior de la página, en cambio puede volver a la última página que visitó. Soluciones incluyen el uso de IFrames invisible para desencadenar cambios en el historial del navegador y el cambio de la porción de anclaje de la dirección (después de un #).
+
+-Los motores de búsqueda no analizan JavaScript. La información en la página dinámica no se almacena en los registros del buscador. Exceptuando Google, que desde el 2011 sí indexa contenido Ajax y JavaScript. Matt Cutts (director del departamento contra el spam en web de Google) lo confirmó en Twitter: “Googlebot keeps getting smarter. Now has the ability to execute AJAX/JS to index some dynamic comments.”
+
+-Hay problemas usando Ajax entre nombres de dominios, a esto se le conoce como Same Origin Policy o Política del Mismo Origen, lo cual es una medida de seguridad que puede ser solucionada con Cross-Origin Resource Sharing (CORS).
+
+-Dependiendo de como se desarrolle el sitio web, puedes mejorar o empeorar la carga en el servidor. Ajax puede ayudar al servidor a evitar la fase de renderización de HTML, dejándole ese trabajo al cliente, pero también puede sobrecargar al servidor si se hace varias llamadas a Ajax.
+
+-Es posible que páginas con Ajax no puedan funcionar en teléfonos móviles, PDA u otros aparatos. Ajax no es compatible con todos los software para invidentes u otras discapacidades.
