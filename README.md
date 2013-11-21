@@ -118,4 +118,25 @@ tener las URLs y revisar.</p>
 </ul>
 
 <h2>Clase 5 (class5)</h2>
-<p>El material de la clase 5 estara disponible el Lunes por la noche.</p>
+<p>El material de esta clase ya se encuentra disponible en el repositorio.</p>
+
+<h4>Enlaces de interes:</h4>
+<ul>
+ <li><a href="http://www.nanotutoriales.com/introduccion-a-jquery">Introduccion a JQuery</a></li>
+ <li><a href="http://api.jquery.com/">Documentacion JQuery</a></li>
+ <li><a href="http://oscarotero.com/jquery/">JQuery Cheatsheet</a></li>
+ <li><a href="http://librosweb.es/ajax/capitulo_10/la_libreria_jquery.html">JQuery en LibrosWeb</a></li>
+ <li><a href="http://botica-informatica.blogspot.com/2012/02/manejo-de-eventos-en-jquery-con-la.html">Eventos en JQuery</a></li>
+ <li><a href="http://librosweb.es/ajax/">Introduccion a Ajax</a></li>
+ <li><a href="http://soyautodidacta.com/2013/08/insertar-datos-jquery-php-en-mysql/">Ajax y PHP</a></li>
+ <li><a href="http://en.wikipedia.org/wiki/JSONP">JSONP</a></li>
+</ul>
+
+<h4>Frameworks PHP:</h4>
+<ul>
+ <li><a href="http://www.etnassoft.com/biblioteca/poo-y-mvc-en-php/">POO y Patron MVC en PHP</a></li>
+ <li><a href="http://ellislab.com/codeigniter">Codeigniter Oficial</a></li>
+ <li><a href="http://www.cristalab.com/tags/codeigniter/">Recursos Codeigniter</a></li>
+ <li><a href="http://laravel.com/">Laravel Oficial</a></li>
+ <li><a href="http://www.cristalab.com/tutoriales/laravel-un-framework-php-c109428l/">Introduccion a Laravel</a></li>
+</ul>
